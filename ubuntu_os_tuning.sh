@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# soft set ulimit immediately
+ulimit -n 4096
+
 # set ulimits
 sudo sh -c 'echo \
 "* soft nofile 65536
