@@ -1,0 +1,8 @@
+run_erl [21778] Wed Sep 25 16:20:45 2013
+Args before exec of shell:
+run_erl [21778] Wed Sep 25 16:20:45 2013
+argv[0] = sh
+run_erl [21778] Wed Sep 25 16:20:45 2013
+argv[1] = -c
+run_erl [21778] Wed Sep 25 16:20:45 2013
+argv[2] = exec /usr/sbin/riak console

@@ -1,0 +1,31 @@
+2013-09-25 12:50:19 =ERROR REPORT====
+** Generic server <0.15342.1346> terminating 
+** Last message in was timeout
+** When Server state == {state,folsom_metrics_spiral,109052212,60}
+** Reason for termination == 
+** {badarg,[{ets,select_delete,[109052212,[{{{'$1','_'},'_'},[{is_integer,'$1'},{'<','$1',1380113359}],[true]}]],[]},{folsom_metrics_spiral,trim,2,[{file,"src/folsom_metrics_spiral.erl"},{line,64}]},{folsom_sample_slide_server,handle_info,2,[{file,"src/folsom_sample_slide_server.erl"},{line,61}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-09-25 12:50:21 =CRASH REPORT====
+  crasher:
+    initial call: folsom_sample_slide_server:init/1
+    pid: <0.15342.1346>
+    registered_name: []
+    exception exit: {{badarg,[{ets,select_delete,[109052212,[{{{'$1','_'},'_'},[{is_integer,'$1'},{'<','$1',1380113359}],[true]}]],[]},{folsom_metrics_spiral,trim,2,[{file,"src/folsom_metrics_spiral.erl"},{line,64}]},{folsom_sample_slide_server,handle_info,2,[{file,"src/folsom_sample_slide_server.erl"},{line,61}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,747}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+    ancestors: [folsom_sample_slide_sup,folsom_sup,riak_core_stat_sup,riak_core_sup,<0.130.0>]
+    messages: []
+    links: [<0.184.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 24
+    reductions: 521707
+  neighbours:
+2013-09-25 12:50:22 =SUPERVISOR REPORT====
+     Supervisor: {local,folsom_sample_slide_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{ets,select_delete,[109052212,[{{{'$1','_'},'_'},[{is_integer,'$1'},{'<','$1',1380113359}],[true]}]],[]},{folsom_metrics_spiral,trim,2,[{file,"src/folsom_metrics_spiral.erl"},{line,64}]},{folsom_sample_slide_server,handle_info,2,[{file,"src/folsom_sample_slide_server.erl"},{line,61}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+     Offender:   [{pid,<0.15342.1346>},{name,undefined},{mfargs,{folsom_sample_slide_server,start_link,[folsom_metrics_spiral,109052212,60]}},{restart_type,transient},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-09-25 13:35:42 =ERROR REPORT====
+** Node 'riak_etop16808@192.168.1.5' not responding **
+** Removing (timedout) connection **

@@ -1,0 +1,6 @@
+2013-09-25 12:50:19.709 [error] <0.15342.1346> gen_server <0.15342.1346> terminated with reason: bad argument in call to ets:select_delete(109052212, [{{{'$1','_'},'_'},[{is_integer,'$1'},{'<','$1',1380113359}],[true]}]) in folsom_metrics_spiral:trim/2 line 64
+2013-09-25 12:50:21.772 [error] <0.15342.1346> CRASH REPORT Process <0.15342.1346> with 0 neighbours exited with reason: bad argument in call to ets:select_delete(109052212, [{{{'$1','_'},'_'},[{is_integer,'$1'},{'<','$1',1380113359}],[true]}]) in folsom_metrics_spiral:trim/2 line 64 in gen_server:terminate/6 line 747
+2013-09-25 12:50:22.293 [error] <0.184.0> Supervisor folsom_sample_slide_sup had child undefined started with folsom_sample_slide_server:start_link(folsom_metrics_spiral, 109052212, 60) at <0.15342.1346> exit with reason bad argument in call to ets:select_delete(109052212, [{{{'$1','_'},'_'},[{is_integer,'$1'},{'<','$1',1380113359}],[true]}]) in folsom_metrics_spiral:trim/2 line 64 in context child_terminated
+2013-09-25 13:35:42.735 [error] <0.10250.46> ** Node 'riak_etop16808@192.168.1.5' not responding **
+** Removing (timedout) connection **
+
