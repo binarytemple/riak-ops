@@ -26,10 +26,14 @@ Set:
 
 ## Siblings
 
-Create Siblings:
+Create siblings:
 
     curl -v 127.0.0.1:8098/buckets/training/keys/test\?returnbody=true -X PUT -H "content-type: text/plain" -d "sibling"
 
-Resolve Siblings:
+Resolve siblings:
 
     curl -v 127.0.0.1:8098/buckets/training/keys/test\?returnbody=true -X PUT -H "content-type: text/plain" -H "x-riak-vclock: [vclock]" -d "resolved"
+
+Check resolution:
+
+    curl -v 127.0.0.1:8098/buckets/training/keys/test
