@@ -1,9 +1,8 @@
-## Riak EE (Source) MDC Realtime Demo
+## Riak EE (devrel) Realtime Demo
 
 ###Scenario
 
-Configure Riak EE MDC to perform replication, given the following two (2) three-node Riak EE Clusters: 
-
+Using a devrel, configure Riak EE to perform multi-datacenter replication, given the following two (2) local three-node Riak EE Clusters: 
 
 ####Cluster 1 
 
