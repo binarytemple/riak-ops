@@ -1,26 +1,26 @@
-## Riak MDC Realtime Demo
+## Riak EE (Source) MDC Realtime Demo
 
 ###Scenario
 
-Configure Riak MDC to perform replication, given the following two (2) three-node Riak EE Clusters: 
+Configure Riak EE MDC to perform replication, given the following two (2) three-node Riak EE Clusters: 
 
 
 ####Cluster 1 
 
 <table>
-<tr><th>name</th><th>ip</th><th>nodename</th></tr>
-<tr><td>node1</td><td>127.0.0.1</td><td>dev1@127.0.0.1</td></tr>
-<tr><td>node2</td><td>127.0.0.1</td><td>dev2@127.0.0.1</td></tr>
-<tr><td>node3</td><td>127.0.0.1</td><td>dev3@127.0.0.1</td></tr>
+<tr><th>name</th><th>ip</th><th>cm port</th><th>nodename</th></tr>
+<tr><td>node1</td><td>127.0.0.1</td><td>10016</td><td>dev1@127.0.0.1</td></tr>
+<tr><td>node2</td><td>127.0.0.1</td><td>10026</td><td>dev2@127.0.0.1</td></tr>
+<tr><td>node3</td><td>127.0.0.1</td><td>10036</td><td>dev3@127.0.0.1</td></tr>
 </table>
 
 ####Cluster 2
 
 <table>
-<tr><th>name</th><th>ip</th><th>nodename</th></tr>
-<tr><td>node4</td><td>127.0.0.1</td><td>dev4@127.0.0.1</td></tr>
-<tr><td>node5</td><td>127.0.0.1</td><td>dev5@127.0.0.1</td></tr>
-<tr><td>node6</td><td>127.0.0.1</td><td>dev6@127.0.0.1</td></tr>
+<tr><th>name</th><th>ip</th><th>cm port</th><th>nodename</th></tr>
+<tr><td>node4</td><td>127.0.0.1</td><td>10046</td><td>dev4@127.0.0.1</td></tr>
+<tr><td>node5</td><td>127.0.0.1</td><td>10056</td><td>dev5@127.0.0.1</td></tr>
+<tr><td>node6</td><td>127.0.0.1</td><td>10066</td><td>dev6@127.0.0.1</td></tr>
 </table>
 
 > NOTE: The addresses used in the example clusters are contrived, non-routable addresses; however, in real world applications these addresses would need to be routable over the public Internet.
@@ -50,6 +50,9 @@ On your source cluster (Cluster1), connect to the IP and port of your sink clust
 
 On your source cluster (Cluster1), view your active connections with `riak-repl connections`
 
+    riak-repl connections
+
+Example output:
 
 ```
 Connection           Cluster Name         <Ctrl-Pid>      [Members]
