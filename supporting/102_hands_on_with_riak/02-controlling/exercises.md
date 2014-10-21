@@ -78,7 +78,7 @@
 
 2. Attach to Riak:
 
-         riak attach
+        riak attach-direct
 
 3. Press `Ctrl-d`.
 

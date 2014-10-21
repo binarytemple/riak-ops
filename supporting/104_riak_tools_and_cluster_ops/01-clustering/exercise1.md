@@ -39,7 +39,7 @@ Observe how our plan has changed:
 Commit those changes, and watch the transfers occur using member_status
 
     dev1/bin/riak-admin cluster commit
-    dev1/bin/riak-admin member_status
+    dev1/bin/riak-admin member-status
 
 Join the other nodes, and we have a five node cluster with a ring size of 64.
 
@@ -47,6 +47,6 @@ Join the other nodes, and we have a five node cluster with a ring size of 64.
     dev5/bin/riak-admin cluster join dev1@127.0.0.1
     dev1/bin/riak-admin cluster plan
     dev1/bin/riak-admin cluster commit
-    dev1/bin/riak-admin member_status
+    dev1/bin/riak-admin member-status
 
 Riak automatically balances the ring via ownership handoff, and we have ~12 vnodes per node.
